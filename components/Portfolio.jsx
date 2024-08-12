@@ -113,8 +113,7 @@ export default function Portfolio() {
                     {
                         return <SwiperSlide key={i}
                         className="flexCenter">
-                          <CardContainer>
-                            <CardBody className=" ">
+                          
                               
                             <PfolioCard
                             url={project.url}
@@ -123,8 +122,7 @@ export default function Portfolio() {
                             category={project.category}
                             />
 
-                              </CardBody>
-                          </CardContainer>
+                             
                         </SwiperSlide>
                     }
                 })}

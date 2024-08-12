@@ -39,17 +39,15 @@ export default function page() {
                     if(project.category === 'frontEnd')
                     {
                         return <div key={i}
-                        className="flexCenter">
-                           <CardContainer>
-                           <CardBody>
+                        className="flexCenter ">
+                          
                             <PfolioCard
                             url={project.url}
                             title={project.title}
                             des={project.des}
                             category={project.category}
                             />
-                            </CardBody>
-                            </CardContainer>
+                         
                         </div>
                     }
                 })}
@@ -65,16 +63,14 @@ export default function page() {
                     {
                         return <div key={i}
                         className="flexCenter">
-                           <CardContainer>
-                           <CardBody>
+                         
                             <PfolioCard
                             url={project.url}
                             title={project.title}
                             des={project.des}
                             category={project.category}
                             />
-                            </CardBody>
-                            </CardContainer>
+                        
                         </div>
                     }
                 })}
@@ -83,22 +79,20 @@ export default function page() {
 
               {/* skills */}
               <TabsContent value="full">
-                             <div className='grid gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3'>
+                             <div className='grid gap-10 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 '>
                              {WORKDATA.map((project,i)=>{
                     if(project.category === 'fullStack')
                     {
                         return <div key={i}
-                        className="flexCenter">
-                            <CardContainer>
-                           <CardBody>
+                        className="flexCenter ">
+                           
                             <PfolioCard
                             url={project.url}
                             title={project.title}
                             des={project.des}
                             category={project.category}
                             />
-                            </CardBody>
-                            </CardContainer>
+                        
                         </div>
                     }
                 })}
